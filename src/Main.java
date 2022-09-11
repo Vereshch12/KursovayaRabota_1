@@ -83,8 +83,16 @@ public class Main {
         }
     }
 
+    private static int numberOfEmployees(){
+        int i = 0;
+        while (archiveOfEmployees[i] != null){
+            i++;
+        }
+        return i;
+    }
+
     private static double averageSalary(){
-        double averageSalary = allSalaries()/(id-1);
+        float averageSalary = (float) allSalaries()/(numberOfEmployees());
         return averageSalary;
     }
 
@@ -98,7 +106,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Employee employee1 = new Employee("Иванов Иван Иванович", "First", 30000);
+        Employee employee1 = new Employee("Иванов Иван Иванович", "First", 30530);
         System.out.println(employee1);
         Employee employee2 = new Employee("Смирнов Федор Николаевич", "First", 25000);
         System.out.println(employee1);
