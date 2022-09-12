@@ -1,7 +1,6 @@
 import java.util.Arrays;
 
 public class Main {
-    static int id = 1;
     private static Employee[] archiveOfEmployees = new Employee[10];
 
     private static void addEmployee(Employee employee){

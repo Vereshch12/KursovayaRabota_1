@@ -2,14 +2,13 @@ public class Employee {
     private final String name;
     private String departament;
     private int salary;
-    private int id;
+    private static int id = 1;
 
     public Employee(String name, String departament, int salary) {
         this.name = name;
         this.departament = departament;
         this.salary = salary;
-        this.id = Main.id;
-        Main.id++;
+        this.id = id++;
     }
 
     public String getName() {
