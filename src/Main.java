@@ -49,9 +49,10 @@ public class Main {
     private static void printEmployeesWithMinSalary(){
         int i = 0;
         int id = 1;
+        int min = minSalary();
         System.out.printf("\nСписок сотрудников с минимальной зарплатой (%d рублей):\n", minSalary());
         while (archiveOfEmployees[i] != null){
-            if (archiveOfEmployees[i].getSalary() == minSalary()){
+            if (archiveOfEmployees[i].getSalary() == min){
                 System.out.printf("%d) %s\n", id++, archiveOfEmployees[i].getName());
             }
             i++;
@@ -73,9 +74,10 @@ public class Main {
     private static void printEmployeesWithMaxSalary(){
         int i = 0;
         int id = 1;
+        int max = maxSalary();
         System.out.printf("\nСписок сотрудников с максимальной зарплатой (%d рублей):\n", maxSalary());
         while (archiveOfEmployees[i] != null){
-            if (archiveOfEmployees[i].getSalary() == maxSalary()){
+            if (archiveOfEmployees[i].getSalary() == max){
                 System.out.printf("%d) %s\n", id++, archiveOfEmployees[i].getName());
             }
             i++;
